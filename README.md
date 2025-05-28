@@ -1,5 +1,16 @@
 # ETF Return Prediction Project
 
+This project aims to predict the forward close-to-close return for 16 ETFs using historical data.
+
+I firstly applied a **Vector AutoRegression (VAR)** model as a baseline multivariate time-series model. Then I chose a more advanced multi-factor machine learning model **XGBoost**, to provide some better predictions.
+
+My prediction target is:  
+> Given all information up to time `t`, predict the return from `t` to `t+1` (close-to-close).
+
+Performance is evaluated based on **cumulative cross-sectional Information Coefficient (IC)**, both in-sample and out-of-sample.
+
+ETF symbols: ['DIA', 'IWM', 'QQQ', 'SPY', 'VXX', 'XLB', 'XLC', 'XLE', 'XLF', 'XLI','XLK', 'XLP', 'XLRE', 'XLU', 'XLV', 'XLY']
+
 This repository contains all files related to the ETF return prediction project, including data processing, model training, hyperparameter tuning, and strategy backtesting.
 
 ## Project Structure📁📁📁
